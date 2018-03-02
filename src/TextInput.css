@@ -1,0 +1,36 @@
+.textInput {
+	background: #fff;
+	border: solid 1px #afc2c9;
+	border-radius: 8px;
+	box-shadow: inset 0 1px 3px rgba(61, 62, 78, 0.2);
+	color: #555;
+	font-family: sans-serif;
+	font-size: 16px;
+	padding: 10px;
+	transition: all 0.3 ease;
+}
+
+.textInput:not([disabled]):focus {
+	border-color: #3ce2bf;
+	box-shadow: inset 0 1px 3px rgba(61, 62, 78, 0.2);
+	outline: none;
+}
+
+.textInput:not([disabled]):hover {
+	box-shadow: inset 0 1px 3px rgba(61, 62, 78, 0.2), 0 0 0 4px #ededed;
+}
+
+.hasError {
+	border-color: #c20a3e;
+	box-shadow: inset 0 1px 3px rgba(194, 10, 62, 0.3);
+}
+
+.textInput[disabled] {
+	background: #e7e9eb;
+	border-color: #afc2c9;
+	box-shadow: none;
+}
+
+.fakeChange.hasError {
+	border-radius: 0;
+}
