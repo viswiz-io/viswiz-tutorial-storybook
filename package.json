@@ -6,8 +6,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "screenshot": "storybook-chrome-screenshot -p 9001",
     "storybook": "start-storybook -p 9001",
+    "test": "storybook-chrome-screenshot && viswiz build --image-dir ./__screenshots__",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
@@ -20,6 +20,7 @@
     "@storybook/addons": "^3.3.14",
     "@storybook/react": "^3.3.14",
     "babel-core": "^6.26.0",
-    "storybook-chrome-screenshot": "1.0.0"
+    "storybook-chrome-screenshot": "1.0.0",
+    "viswiz-sdk": "1.3.2"
   }
 }
