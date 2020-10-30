@@ -1,9 +1,9 @@
 # sudo is required due to a limitation in Travis CI when running headless Chrome
 # https://github.com/travis-ci/travis-ci/issues/8836#issuecomment-356362524
-sudo: required
+# sudo: required
 language: node_js
 node_js:
-  - '8'
+  - '12'
 
 script:
   - yarn test
